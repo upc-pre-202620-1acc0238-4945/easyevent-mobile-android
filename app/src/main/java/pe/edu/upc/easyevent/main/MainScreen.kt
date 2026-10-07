@@ -8,6 +8,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import pe.edu.upc.easyevent.features.home.presentation.HomeScreen
 
 @Composable
 fun MainScreen() {
@@ -24,7 +25,7 @@ fun MainScreen() {
             modifier = Modifier.padding(innerPadding)
         ) {
             composable<HomeRoute> {
-                Text(text = "Home Screen")
+                HomeScreen()
             }
             composable<FavoritesRoute> {
                 Text(text = "Favorites Screen")
